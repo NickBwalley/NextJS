@@ -10,6 +10,19 @@ export default function Dashboard() {
     <>
       <h1>Dashboard</h1>
       <p>Welcome to the dashboard!</p>
+      <Link href="/">Home Page</Link> <br />
+      <Link href="/articles/breaking-news-123?lang=en">
+        Read Article in English
+      </Link>
+      <br />
+      <Link href="/articles/breaking-news-123?lang=fr">
+        Read Article in French
+      </Link>
+      <br />
+      <Link href="/articles/breaking-news-123?lang=es">
+        Read Article in Spanish
+      </Link>
+      <br />
       <Link href="/blog">Blog Page</Link> <br />
       <Link href="/about">About Page</Link>
       <br />

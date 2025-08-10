@@ -1,8 +1,16 @@
-export default function Page() {
+import Link from "next/link";
+
+export const metadata = {
+  title: "HomePage",
+  description: "Overview of the application",
+};
+
+export default function HomePage() {
   return (
-    <div>
-      <h1>Welcome to the Page</h1>
-      <p>This is a simple page component.</p>
-    </div>
+    <>
+      <h1>HomePage</h1>
+      <p>Welcome to the HomePage!</p>
+      <Link href="/dashboard">Dashboard</Link> <br />
+    </>
   );
 }
