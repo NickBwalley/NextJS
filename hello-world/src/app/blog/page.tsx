@@ -7,7 +7,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Loading page...");
+    }, 2000); // Simulate a delay
+  });
   return (
     <div>
       <h1>Blog Page</h1>
